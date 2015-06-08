@@ -19,7 +19,7 @@ class SwitchDemo{
 					System.out.println("i is four");
 					break;
 				default:
-					System.out.println("i is firve or more");
+					System.out.println("i is five or more");
 			}
 		}
 	}
