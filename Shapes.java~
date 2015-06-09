@@ -19,6 +19,11 @@ class Shapes{
 class TwoDShape{
 	private double width;
 	private double height;
+	
+	TwoDShape(double w, double h){
+		width = w;
+		height = h;
+	}
 	void showDim(){
 		System.out.println("Width and height are " + width + " and " + height);
 	}
@@ -39,9 +44,8 @@ class TwoDShape{
 class Triangle extends TwoDShape{
 	String style;
 	Triangle(String s, double w, double h){
+		super(w,h)
 		style = s;
-		setheight(h);
-		setwidth(w);
 	}
 
 	double area(){
