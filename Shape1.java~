@@ -38,7 +38,7 @@ class Triangle extends TwoDShape{
 		style = "filled";
 	}
 	double area(){
-		return getwidth * getheight / 2;
+		return getwidth() * getheight() / 2;
 	}
 	void showStyle(){
 		System.out.println("Triangle is " + style);
