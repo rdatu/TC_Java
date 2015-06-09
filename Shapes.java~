@@ -3,12 +3,13 @@ class Shapes{
 		Triangle t1 = new Triangle();
 		Triangle t2 = new Triangle();
 		
-		t1.width = 4.0;
-		t1.height = 4.0;
+		t1.setwidth(4.0);
+		t1.setheight(4.0);
 		t1.style = "filled";
-		
-		t2.width = 8.0;
-		t2.height = 12.0;
+	
+
+		t2.setwidth(8.0);
+		t2.setheight(8.0);
 		t2.style = "outlined";
 
 		System.out.println("Info for t1: ");
@@ -25,17 +26,29 @@ class Shapes{
 	}
 }
 class TwoDShape{
-	double width;
-	double height;
+	private double width;
+	private double height;
 	void showDim(){
 		System.out.println("Width and height are " + width + " and " + height);
+	}
+	double getwidth(){
+		return width;
+	}
+	double getheight(){
+		return height;
+	}
+	void setwidth(double w){
+		width = w;
+	}
+	void setheight(double h){
+		height = h;
 	}
 }
 
 class Triangle extends TwoDShape{
 	String style;
 	double area(){
-		return width * height / 2;
+		return getwidth() * getheight() / 2;
 	}
 	void showStyle(){
 		System.out.println("Triangle is " + style);
