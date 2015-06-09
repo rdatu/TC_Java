@@ -1,16 +1,8 @@
 class Shapes{
 	public static void main(String args[]){
-		Triangle t1 = new Triangle();
-		Triangle t2 = new Triangle();
+		Triangle t1 = new Triangle("filled" , 4.0 , 4.0);
+		Triangle t2 = new Triangle("outlined" , 8.0 , 12.0);
 		
-		t1.setwidth(4.0);
-		t1.setheight(4.0);
-		t1.style = "filled";
-
-		t2.setwidth(8.0);
-		t2.setheight(8.0);
-		t2.style = "outlined";
-
 		System.out.println("Info for t1: ");
 		t1.showStyle();
 		t1.showDim();
@@ -46,6 +38,12 @@ class TwoDShape{
 
 class Triangle extends TwoDShape{
 	String style;
+	Triangle(String s, double w, double h){
+		style = s;
+		setheight(h);
+		setwidth(w);
+	}
+
 	double area(){
 		return getwidth() * getheight() / 2;
 	}
