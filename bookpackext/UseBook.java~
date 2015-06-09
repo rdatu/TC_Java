@@ -1,5 +1,5 @@
 package bookpackext;
-
+import bookpack.*;
 class UseBook{
 	public static void main(String args[]){
 		bookpack.Book books[] = new bookpack.Book[5];
@@ -9,6 +9,6 @@ class UseBook{
 		books[3] = new bookpack.Book("Red Strom Rising","Clancy",1986);
 		books[4] = new bookpack.Book("On the Road", "Kerouac", 1955);
 		for(int i = 0; i<books.length;i++) books[i].show();
-		System.out.println(books[1].author);
+
 	}
 }
