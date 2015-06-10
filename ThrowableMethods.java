@@ -18,6 +18,6 @@ class ThrowableMethods{
 			System.out.println("\nStack Trace: ");
 			exc.printStackTrace();
 		}
-		System.out.prinln("After catch Statement.");
+		System.out.println("After catch Statement.");
 	}
 }

@@ -16,6 +16,8 @@ class ThrowableMethods{
 			System.out.println("Standard message is: ");
 			System.out.println(exc);
 			System.out.println("\nStack Trace: ");
+			exc.printStackTrace();
 		}
+		System.out.prinln("After catch Statement.");
 	}
 }
