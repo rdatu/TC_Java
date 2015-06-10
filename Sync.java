@@ -31,7 +31,10 @@ class MyThread implements Runnable {
 	public void run(){
 		int sum;
 		System.out.println(thrd.getName() + " starting.");
-		answer = sa.sumArray(a);
+		synchronized(sa){
+			answer = sa.sumArray(a);
+		}
+
 		
 		System.out.println("Sum for " + thrd.getName() + " is " + answer);
 		System.out.println(thrd.getName() + " terminating.");
