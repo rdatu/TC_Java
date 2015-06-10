@@ -24,5 +24,13 @@ class ShowFile{
 		catch(IOException exc){
 			System.out.println("Error reading File.");
 		}
+		finally{
+			try{
+				fin.close();
+			}
+			catch(IOException exc){
+				System.out.println("Error Closing File");
+			}
+		}
 	}
 }
