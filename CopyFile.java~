@@ -7,7 +7,7 @@ class CopyFile{
 			System.out.println("Usage : CopyFile from to");
 			return;
 		}
-		try (FileInputStream fin = new FileInputStream(args[0];
+		try (FileInputStream fin = new FileInputStream(args[0]);
 			FileOutputStream fout = new FileOutputStream(args[1])) // automatically closed
 		{
 			//fin = new FileInputStream(args[0]);    
